@@ -3,8 +3,8 @@
 # by Darren Provine, 14 September 2002
 
 DESTDIR = /var/www/html
-TARGETS = CBTest.html index.html  # These two lines should more or less always have the same files listed
-SOURCES = CBTest.html index.html
+TARGETS = CBTest.html index.html chat.html  # These two lines should more or less always have the same files listed
+SOURCES = CBTest.html index.html chat.html
 
 
 # This target is just here to be the top target in the Makefile.
