@@ -3,7 +3,7 @@ function process(){
     var baseUrl = "https://api.api.ai/v1/";
     $(document).ready(function() {
 	$("#input").keypress(function(event) {
-	    if (event.which == 13 && $("#input").val() != "") {
+	    if (event.which == 13 && $("#input").val().replace(/\s/g, "") != "") {
 		event.preventDefault();
 		send();
 	    }
