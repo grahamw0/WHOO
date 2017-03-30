@@ -56,6 +56,7 @@ function process(){
     }
     function send() {
 	var text = $("#input").val();
+	setResponse(text);
 	$.ajax({
 	    type: "POST",
 	    url: baseUrl + "query?v=20150910",
@@ -72,11 +73,11 @@ function process(){
 		setResponse("Internal Server Error");
 	    }
 	});
-	setResponse("Loading...");
+	// setResponse("Loading...");
     }
     function setResponse(val) {
 	$("#input").val("");
-	$("#response").append(val + "\n");
+	$("#response").append(val + "\n\n");
 	$("#response").scrollTop($("#response")[0].scrollHeight);
     }
 }
