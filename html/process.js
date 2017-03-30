@@ -66,7 +66,7 @@ function process(){
 	    },
 	    data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 	    success: function(data) {
-		setResponse(JSON.stringify(data, undefined, 2));
+		setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
 	    },
 	    error: function() {
 		setResponse("Internal Server Error");
@@ -75,6 +75,7 @@ function process(){
 	setResponse("Loading...");
     }
     function setResponse(val) {
+	$("#input").val("");
 	$("#response").append(val + "\n");
 	$("#response").scrollTop($("#response")[0].scrollHeight);
     }
