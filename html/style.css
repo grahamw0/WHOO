@@ -45,9 +45,9 @@ textarea:focus, input:focus{
 }
 
 input::-webkit-input-placeholder {
-    font-size: 20px;
+    /*font-size: 20px;*/
     line-height: 3;
-	opacity: 0.5;
+	opacity: 0.25;
 }
 
 .botleft {
