@@ -1,3 +1,4 @@
+function process(){
 var count = 0;
 var accessToken = "c87528439d4f4a2aa097f1aec7d414e3";
 var baseUrl = "https://api.api.ai/v1/";
@@ -97,4 +98,5 @@ function setResponse(val, userInput) {
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));
 
     
+}
 }
