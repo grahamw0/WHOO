@@ -12,7 +12,6 @@ $(document).ready(function() {
     $("#rec").click(function(event) {
     	switchRecognition();
     });
-	    });
     $("#input").focus();
 });
 var recognition;
