@@ -89,7 +89,6 @@
   color: #EDD51C;
   top: 10px;
   text-shadow: 2px 2px 4px #3F1A0A;
-  position: relative;
   font-family: "Gothem";
   font-size: 40px;
   text-align: center;
@@ -162,7 +161,6 @@
 
 a:hover + .box,.box:hover{
     display: block;
-    position: absolute;
 	top:30px;
 	left:30px;
     z-index: 100;
