@@ -39,6 +39,10 @@
     left: 0;
 
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
 .botleft {
   position: absolute;	
   top: 3%;
