@@ -11,7 +11,6 @@ var count = 0;
 	$("#rec").click(function(event) {
 	    switchRecognition();
 	});
-    });
     var recognition;
     function startRecognition() {
 	recognition = new webkitSpeechRecognition();
