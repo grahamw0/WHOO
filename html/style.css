@@ -100,10 +100,10 @@ input::-webkit-input-placeholder {
 .botheader2 {
   font-weight: bold;
   color: #EDD51C;
-  border: 25% solid #3F1A0A;
+  border: 40px solid #3F1A0A;
   text-shadow: #b38f00 2px 2px 2px;
   font-family: "Gothem";
-  font-size: 50%;
+  font-size: 50px;
   text-align: center;
   padding: 0em 1em 1em 1em;
 }
