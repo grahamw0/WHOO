@@ -36,7 +36,7 @@
     margin: 0 auto;
     overflow-X: hidden;
     overflow-Y: auto;
-    left 0;
+    left: 0;
 
 }
 .botleft {
@@ -157,7 +157,7 @@
 
 a:hover + .box,.box:hover{
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 100;
 }
 
