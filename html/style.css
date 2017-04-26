@@ -28,7 +28,7 @@
 
 #divCont {
     height: 50%;
-    width: 100%;
+    width: 90%;
 	background: #FFFFFF;
     color: #FFFFFF;
     font-family: "Gothem";
@@ -169,7 +169,7 @@ input::-webkit-input-placeholder {
 	top:30px;
 	left:30px;
     width: 450px;
-    height: 450px;
+    height: 500px;
 }
 
 a:hover + .box,.box:hover{
