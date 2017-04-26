@@ -88,6 +88,9 @@
   font-weight: bold;
   color: #EDD51C;
   position: relative;
+  font-size: 18px;
+  text-align: center;
+  padding: 0em 1em 1em 1em;
 }
 
 .messages-wrapper {
