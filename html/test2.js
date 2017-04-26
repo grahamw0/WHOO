@@ -68,7 +68,12 @@ function send() {
     	},
     	data: JSON.stringify({ query: text, lang: "en", sessionId: Math.random().toString(36).substring(7) }),
     	success: function(data) {
+    	    if(!(document.getElementById('DEVMODE').checked)) {
+    		setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
+    	    }
+    	    else {
     		setResponse(JSON.stringify(data, undefined, 2), false);
+    	    }
     	},
     	error: function() {
     	    setResponse("Internal Server Error");
