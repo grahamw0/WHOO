@@ -3,8 +3,8 @@
 # by Darren Provine, 14 September 2002
 
 DESTDIR = /var/www/html
-TARGETS = CBTest.html index.html chat.html process.js Logo2.png faq.html visit_yellow.png chat2.html # These two lines should more or less always have the same files listed
-SOURCES = CBTest.html index.html chat.html process.js Logo2.png faq.html visit_yellow.png chat2.html
+TARGETS = CBTest.html index.html chat.html process.js Logo2.png faq.html visit_yellow.png chat2.html morty.png mic.png# These two lines should more or less always have the same files listed
+SOURCES = CBTest.html index.html chat.html process.js Logo2.png faq.html visit_yellow.png chat2.html morty.png mic.png
 
 
 # This target is just here to be the top target in the Makefile.
