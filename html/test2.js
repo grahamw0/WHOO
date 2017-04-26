@@ -44,8 +44,10 @@ function stopRecognition() {
 }
 function switchRecognition() {
     if (recognition) {
+		$("#rec").attr("src", "mic.png")
     	stopRecognition();
     } else {
+		$("#rec").attr("src", "hot-mic.png")
     	startRecognition();
     }
 }
