@@ -55,29 +55,30 @@ function process(){
 	$("#rec").text(recognition ? "Stop" : "Speak");
     }
     function send() {
-	var text = $("#input").val();
-	setResponse(text);
-	$.ajax({
-	    type: "POST",
-	    url: baseUrl + "query?v=20150910",
-	    contentType: "application/json; charset=utf-8",
-	    dataType: "json",
-	    headers: {
-		"Authorization": "Bearer " + accessToken
-	    },
-	    data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
-	    success: function(data) {
-		setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
-	    },
-	    error: function() {
-		setResponse("Internal Server Error");
-	    }
-	});
+    var text = $("#input").val();
+    setResponse(text, true);  // User input
+    $.ajax({
+    	type: "POST",
+    	url: baseUrl + "query?v=20150910",
+    	contentType: "application/json; charset=utf-8",
+    	dataType: "json",
+    	headers: {
+    	    "Authorization": "Bearer " + accessToken
+    	},
+    	data: JSON.stringify({ query: text, lang: "en", sessionId: Math.random().toString(36).substring(7) }),
+    	success: function(data) {
+    		setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
+    	},
+    	error: function() {
+    	    setResponse("Internal Server Error");
+    	}
+    });
 	// setResponse("Loading...");
     }
-    function setResponse(val) {
-	$("#input").val("");
-	    if (!userInput && val.split(/(?=http?)/).length == 2) {
+function setResponse(val, userInput) {
+    $("#input").val("");  // Blank out user input box
+
+    if (!userInput && val.split(/(?=http?)/).length == 2) {
 	var arr = val.split(/(?=http?)/);
 	$("#divCont").append("<div class=\"botdiv\"<p>" + arr[0] + "<br><a target=\"_blank\" href=" +
 			     arr[1].substring(0,arr[1].length-1) + ">Link</a><div class=\"box\"><iframe src=" + arr[1].substring(0,arr[1].length-1) + " width = \"100%\" height = \"100%\"></iframe></div></p></div><br>");
@@ -90,5 +91,5 @@ function process(){
 	}
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));
-    }
+   
 }
