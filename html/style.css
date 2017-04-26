@@ -154,11 +154,11 @@
 
 a:hover + .box,.box:hover{
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 100;
 }
 
-.message.userDiv {
+.userDiv {
     border-radius: .5em;
     background-color: #E5E4E9 ;
     color: #363636;
@@ -187,7 +187,7 @@ a:hover + .box,.box:hover{
     z-index: -1;
 }
 */
-.message.botDiv {
+.botDiv {
     border-radius: .5em;
     background-color: #EDD51C ;
     color: #3F1A0A ;

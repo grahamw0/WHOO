@@ -53,7 +53,7 @@ function setInput(text) {
     send();
 }
 function updateRec() {
-    $("#rec").text(recognition ? "Stop" : "Speak");
+    $("#rec").text(recognition ? "Stop" : <i class="fa fa-microphone">);
 }
 function send() {
     var text = $("#input").val();
@@ -88,9 +88,9 @@ function setResponse(val, userInput) {
     } else {	
 	// userP and botP
 	if (userInput) {
-	    $("#divCont").append("<div class=\"message userdiv\"><p>" + val +"</p></div><br>");
+	    $("#divCont").append("<div class=\"userdiv\"><p>" + val +"</p></div><br>");
 	} else {
-	    $("#divCont").append("<div class=\"message botdiv\"><p>" + val +"</p></div><br>");
+	    $("#divCont").append("<div class=\"botdiv\"><p>" + val +"</p></div><br>");
 	}
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));
