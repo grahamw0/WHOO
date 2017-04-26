@@ -151,6 +151,8 @@
 
 .box{
     display: none;
+	top:30px;
+	left:30px;
     width: 450px;
     height: 500px;
 }
