@@ -154,7 +154,7 @@
 
 a:hover + .box,.box:hover{
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 100;
 }
 
