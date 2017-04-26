@@ -53,7 +53,7 @@ function setInput(text) {
     send();
 }
 function updateRec() {
-    $("#rec").text(recognition ? "Stop" : <i class="fa fa-microphone">);
+    $("#rec").text(recognition ? "Stop" : "SPEAK");
 }
 function send() {
     var text = $("#input").val();
