@@ -163,6 +163,7 @@ a:hover + .box,.box:hover{
     display: block;
 	top:30px;
 	left:30px;
+	position: absolute;
     z-index: 100;
 }
 
