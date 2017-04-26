@@ -1,5 +1,5 @@
-function process(){
-    var accessToken = "c87528439d4f4a2aa097f1aec7d414e3";
+var count = 0;
+ var accessToken = "c87528439d4f4a2aa097f1aec7d414e3";
     var baseUrl = "https://api.api.ai/v1/";
     $(document).ready(function() {
 	$("#input").keypress(function(event) {
