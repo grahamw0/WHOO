@@ -151,8 +151,8 @@
 
 .box{
     display: none;
-    width: 450px;
-    height: 500px;
+    width: 25%;
+    height: 30%;
 }
 
 a:hover + .box,.box:hover{
