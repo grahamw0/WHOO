@@ -67,9 +67,10 @@ textarea:focus, input:focus{
 */
 .botright {
   position: absolute;
-  top: 0;
-  right: 15px;
-  font-size: 18px
+  top: 3%;
+  right: 85%;
+  width: 10%;
+  height: 10%; 
 }
 
 .botheader {
