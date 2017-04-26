@@ -52,9 +52,9 @@ function setInput(text) {
     $("#input").val(text);
     send();
 }
-function updateRec() {
-    $("#rec").text(recognition ? "Stop" : "Speak");
-}
+    function updateRec() {
+	$("#rec").text(recognition ? "Stop" : "Speak");
+    }
 function send() {
     var text = $("#input").val();
     setResponse(text, true);  // User input
