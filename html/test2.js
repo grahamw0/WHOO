@@ -86,16 +86,16 @@ function send() {
 function setResponse(val, userInput) {
     $("#input").val("");  // Blank out user input box
 
-    if (!userInput && val.split(/(?=https?)/).length == 2) {
-	var arr = val.split(/(?=https?)/);
-	$("#divCont").append("<div class=\"botDiv\"<p>" + arr[0] + "<br><a target=\"_blank\" href=" +
+    if (!userInput && val.split(/(?=http?)/).length == 2) {
+	var arr = val.split(/(?=http?)/);
+	$("#divCont").append("<div class=\"message botdiv\"<p>" + arr[0] + "<br><a target=\"_blank\" href=" +
 			     arr[1].substring(0,arr[1].length-1) + ">Link</a><div class=\"box\"><iframe src=" + arr[1].substring(0,arr[1].length-1) + " width = \"100%\" height = \"100%\"></iframe></div></p></div><br>");
     } else {	
 	// userP and botP
 	if (userInput) {
-	    $("#divCont").append("<div class=\"userDiv\"><p>" + val +"</p></div><br>");
+	    $("#divCont").append("<div class=\"message userdiv\"><p>" + val +"</p></div><br>");
 	} else {
-	    $("#divCont").append("<div class=\"botDiv\"><p>" + val +"</p></div><br>");
+	    $("#divCont").append("<div class=\"message botdiv\"><p>" + val +"</p></div><br>");
 	}
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));
