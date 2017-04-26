@@ -68,9 +68,7 @@ function send() {
     	},
     	data: JSON.stringify({ query: text, lang: "en", sessionId: Math.random().toString(36).substring(7) }),
     	success: function(data) {
-
     		setResponse(JSON.stringify(data, undefined, 2), false);
-    	   
     	},
     	error: function() {
     	    setResponse("Internal Server Error");
