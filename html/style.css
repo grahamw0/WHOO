@@ -31,7 +31,7 @@
     width: 100%;
 	background: #FFFFFF;
     color: #FFFFFF;
-    font-family: "Open Sans";
+    font-family: "Gothem";
     line-height: 26px;
     margin: 0 auto;
     overflow-X: hidden;
@@ -45,7 +45,6 @@
   left: 5%;
   width: 10%;
   height: 10%; 
-  font-size: 18px;
 }
 /*.left:after {
     border: 3px solid #2095FE;
