@@ -104,7 +104,6 @@ function setResponse(val, userInput) {
 
 function downloadChatLog(){
     var elHtml = document.getElementById('divCont').innerHTML;
-	elHtml.find('.box').remove();
     var link = document.createElement('a');
     mimeType = 'text/html';
 
