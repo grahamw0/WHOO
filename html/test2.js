@@ -96,7 +96,8 @@ function setResponse(val, userInput) {
 	if (userInput) {
 	    $("#divCont").append("<div class=\"userdiv\"><p>" + val +"</p></div><br>");
 	} else {
-	    $("#divCont").append("<div class=\"botdiv\"><p>" + val +"</p></div><br>");
+		var responce = val.sustring(1,val.length);
+	    $("#divCont").append("<div class=\"botdiv\"><p>" + val.sustring(1,val.length) +"</p></div><br>");
 	}
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));  
