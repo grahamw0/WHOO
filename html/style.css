@@ -178,7 +178,7 @@ input::-webkit-input-placeholder {
 a:hover + .box,.box:hover{
     display: block;
 	top:30px;
-	left:15%;
+	left:10%;
 	position: absolute;
     z-index: 100;
 }
