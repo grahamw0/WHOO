@@ -16,6 +16,7 @@ $(document).ready(function() {
 });
 var recognition;
 function startRecognition() {
+    $("#rec").attr("src", "hot-mic.png")
     recognition = new webkitSpeechRecognition();
     recognition.onstart = function(event) {
     	updateRec();
@@ -37,6 +38,7 @@ function startRecognition() {
 
 function stopRecognition() {
     if (recognition) {
+	$("#rec").attr("src", "mic.png")
     	recognition.stop();
     	recognition = null;
     }
@@ -44,10 +46,8 @@ function stopRecognition() {
 }
 function switchRecognition() {
     if (recognition) {
-		$("#rec").attr("src", "mic.png")
     	stopRecognition();
     } else {
-		$("#rec").attr("src", "hot-mic.png")
     	startRecognition();
     }
 }

@@ -27,8 +27,8 @@
 
 
 #divCont {
-    height: 60%;
-    width: 100%;
+    height: 50%;
+    width: 90%;
 	background: #FFFFFF;
     color: #FFFFFF;
     font-family: "Gothem";
@@ -52,7 +52,7 @@ input::-webkit-input-placeholder {
 
 .botleft {
   position: absolute;	
-  top: 1%;
+  top: 3%;
   left: 5%;
   width: 10%;
   height: 10%; 
@@ -84,10 +84,11 @@ input::-webkit-input-placeholder {
 .botheader {
   color: #EDD51C;
   background: #3F1A0A;
-  border: 1px solid #3F1A0A;
-  border-bottom: 1px solid #3F1A0A;
+  border: 5px double #000000;
+  border-bottom: 5px double #000000;
   box-shadow: 3px 4px 5px #000000(1,1,1,0.2);
-  height: 12%;
+  border-radius: 15px 50px 0 0;
+  height: 15%;
   width: 100%;
   text-align: center;
   line-height: 58px;
@@ -100,10 +101,11 @@ input::-webkit-input-placeholder {
 .botheader2 {
   font-weight: bold;
   color: #EDD51C;
-  border: 15px solid #3F1A0A;
+  border: 40px solid #3F1A0A;
+  border-radius: 15px 50px 0 0;
   text-shadow: #b38f00 2px 2px 2px;
   font-family: "Gothem";
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   padding: 0em 1em 1em 1em;
 }
@@ -112,7 +114,8 @@ input::-webkit-input-placeholder {
   padding-top: 10%;
   background: #FFFFFF;
   position: relative;
-  border: 1px solid #3F1A0A;
+  border: 5px solid #3F1A0A;
+  border-radius: 0 0 15px 50px;
   border-top: 0 none;
   padding: 0em 1em 1em 1em;
   margin: 0 auto;
@@ -167,15 +170,15 @@ input::-webkit-input-placeholder {
 .box{
     display: none;
 	top:30px;
-	left:30px;
+	left: 50px;
     width: 450px;
-    height: 450px;
+    height: 500px;
 }
 
 a:hover + .box,.box:hover{
     display: block;
 	top:30px;
-	left:30px;
+	left:10%;
 	position: absolute;
     z-index: 100;
 }
