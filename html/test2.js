@@ -13,6 +13,9 @@ $(document).ready(function() {
     	switchRecognition();
     });
     $("#input").focus();
+	$('#downloadLink').click(function(){
+    downloadChat();
+	});
 });
 var recognition;
 function startRecognition() {
@@ -107,8 +110,6 @@ a.download = filename;
 a.href = "data:text/html," + document.getElementById("divCont").innerHTML;
 }
 
-$('#downloadLink').click(function(){
-    downloadChat();
-});
-
 }
+
+
