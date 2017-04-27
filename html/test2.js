@@ -106,7 +106,7 @@ function setResponse(val, userInput) {
 function downloadChatLog(){
     var elHtml = document.getElementById('divCont').innerHTML;
     var link = document.createElement('a');
-    mimeType = mimeType || 'text/plain';
+    mimeType = 'text/html';
 
     link.setAttribute('download', filename);
     link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
