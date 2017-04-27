@@ -2,6 +2,7 @@ function process(){
 var count = 0;
 var accessToken = "c87528439d4f4a2aa097f1aec7d414e3";
 var baseUrl = "https://api.api.ai/v1/";
+var fileName =  'chatlog.html';
 $(document).ready(function() {
     $("#input").keypress(function(event) {
     	if (event.which == 13 && $("#input").val().replace(/\s/g, "") != "") {  // Ensuring input not blank
@@ -101,13 +102,15 @@ function setResponse(val, userInput) {
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));  
 }
+
 function downloadChatLog(){
-var a = document.body.appendChild(
-        document.createElement("a")
-    );
-var filename = "chatlog.html";
-a.download = filename;
-a.href = "data:text/html," + document.getElementById("divCont").innerHTML;
+    var elHtml = document.getElementById(elId).innerHTML;
+    var link = document.createElement('a');
+    mimeType = mimeType || 'text/plain';
+
+    link.setAttribute('download', filename);
+    link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+    link.click(); 
 }
 
 }
