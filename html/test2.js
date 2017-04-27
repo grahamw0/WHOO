@@ -2,7 +2,6 @@ function process(){
 var count = 0;
 var accessToken = "c87528439d4f4a2aa097f1aec7d414e3";
 var baseUrl = "https://api.api.ai/v1/";
-var fileName =  'chatlog.html';
 $(document).ready(function() {
     $("#input").keypress(function(event) {
     	if (event.which == 13 && $("#input").val().replace(/\s/g, "") != "") {  // Ensuring input not blank
@@ -108,7 +107,7 @@ function downloadChatLog(){
     var link = document.createElement('a');
     mimeType = 'text/html';
 
-    link.setAttribute('download', filename);
+    link.setAttribute('download', 'chatlog.html');
     link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
     link.click(); 
 }
