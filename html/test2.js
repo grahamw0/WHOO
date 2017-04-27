@@ -12,7 +12,7 @@ $(document).ready(function() {
     $("#rec").click(function(event) {
     	switchRecognition();
     });
-    $("#input").focus();
+    // $("#input").focus();
 });
 var recognition;
 function startRecognition() {
