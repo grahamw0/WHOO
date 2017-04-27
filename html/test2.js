@@ -96,7 +96,7 @@ function setResponse(val, userInput) {
 	if (userInput) {
 	    $("#divCont").append("<div class=\"userdiv\"><p>" + val +"</p></div><br>");
 	} else {
-		var responce = val.sustring(1,val.length);
+		var responce = val.subtring(1,val.length);
 	    $("#divCont").append("<div class=\"botdiv\"><p>" + val.sustring(1,val.length) +"</p></div><br>");
 	}
     }
