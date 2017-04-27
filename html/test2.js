@@ -90,7 +90,7 @@ function setResponse(val, userInput) {
     if (!userInput && val.split(/(?=http?)/).length == 2) {
 	var arr = val.split(/(?=http?)/);
 	$("#divCont").append("<div class=\"botdiv\"<p>" + arr[0] + "<br><a target=\"_blank\" href=" +
-			     arr[1].substring(0,arr[1].length-1) + ">Link</a><div class=\"box\"><iframe src=" + arr[1].substring(0,arr[1].length-1) + " width = \"100%\" height = \"100%\"></iframe></div></p></div><br>");
+			     arr[1].substring(0,arr[1].length-1) + ">Link</a><div class=\"box\"><iframe src=" + arr[1].substring(0,arr[1].length) + " width = \"100%\" height = \"100%\"></iframe></div></p></div><br>");
     } else {	
 	// userP and botP
 	if (userInput) {
