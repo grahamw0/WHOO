@@ -13,9 +13,6 @@ $(document).ready(function() {
     	switchRecognition();
     });
     $("#input").focus();
-	$('#downloadLink').click(function(){
-    downloadChat();
-	});
 });
 var recognition;
 function startRecognition() {
