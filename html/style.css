@@ -114,7 +114,7 @@ input::-webkit-input-placeholder {
   padding-top: 10%;
   background: #FFFFFF;
   position: relative;
-  border: 1px solid #3F1A0A;
+  border: 5px solid #3F1A0A;
   border-radius: 0 0 15px 50px;
   border-top: 0 none;
   padding: 0em 1em 1em 1em;
