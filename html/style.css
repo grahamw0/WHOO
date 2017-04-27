@@ -84,8 +84,8 @@ input::-webkit-input-placeholder {
 .botheader {
   color: #EDD51C;
   background: #3F1A0A;
-  border: 5px groove #000000;
-  border-bottom: 5px groove #3F1A0A;
+  border: 5px double #000000;
+  border-bottom: 5px double #3F1A0A;
   box-shadow: 3px 4px 5px #000000(1,1,1,0.2);
   border-radius: 15px 50px 0 0;
   height: 15%;
