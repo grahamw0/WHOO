@@ -96,8 +96,19 @@ function setResponse(val, userInput) {
 	    $("#divCont").append("<div class=\"botdiv\"><p>" + val +"</p></div><br>");
 	}
     }
-    $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));
-
-    
+    $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));  
 }
+function downloadChat(){
+var a = document.body.appendChild(
+        document.createElement("a")
+    );
+var filename = "chatlog.html";
+a.download = filename;
+a.href = "data:text/html," + document.getElementById("divCont").innerHTML;
+}
+
+$('#downloadLink').click(function(){
+    downloadChat();
+});
+
 }
