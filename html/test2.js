@@ -74,7 +74,7 @@ function send() {
     	},
     	data: JSON.stringify({ query: text, lang: "en", sessionId: Math.random().toString(36).substring(7) }),
     	success: function(data) {
-    		setResponse(JSON.stringify(data.result.fulfillment.speech, undefined, 2));
+    		setResponse(JSON.parse(JSON.stringify(data.result.fulfillment.speech, undefined, 2)));
     	},
     	error: function() {
     	    setResponse("Internal Server Error");
