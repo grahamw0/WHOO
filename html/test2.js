@@ -13,6 +13,9 @@ $(document).ready(function() {
     	switchRecognition();
     });
     $("#input").focus();
+	$("#downloadChat").click(function(event) {
+    	downloadChatLog();
+    });
 });
 var recognition;
 function startRecognition() {
@@ -98,7 +101,7 @@ function setResponse(val, userInput) {
     }
     $("#divCont").scrollTop($("#divCont").prop("scrollHeight"));  
 }
-function downloadChat(){
+function downloadChatLog(){
 var a = document.body.appendChild(
         document.createElement("a")
     );
