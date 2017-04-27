@@ -32,7 +32,6 @@
 	background: #FFFFFF;
     color: #FFFFFF;
     font-family: "Gothem";
-	font-size: 20px;
     line-height: 26px;
     margin: 0 auto;
     overflow-X: hidden;
@@ -188,6 +187,7 @@ a:hover + .box,.box:hover{
     border-radius: .5em;
     background-color: #E5E4E9 ;
     color: #363636;
+	font-size: 20px;
     display: inline-block;
     margin-bottom: .5em;
     margin-left: 40%;
@@ -217,6 +217,7 @@ a:hover + .box,.box:hover{
     border-radius: .5em;
     background-color: #EDD51C ;
     color: #3F1A0A ;
+	font-size: 20px;
     display: inline-block;
     margin-bottom: .5em;
     max-width: 60%;
