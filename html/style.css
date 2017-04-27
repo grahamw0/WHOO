@@ -170,7 +170,7 @@ input::-webkit-input-placeholder {
 .box{
     display: none;
 	top:30px;
-	left:30px;
+	left: 50px;
     width: 450px;
     height: 500px;
 }
